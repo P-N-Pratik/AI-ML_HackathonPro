@@ -1,0 +1,80 @@
+/* Container and Wrapper styles are already in the styled-components */
+
+/* Goal Options Styles */
+.goal-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px; /* Added gap between buttons */
+}
+
+/* Goal Button Styles */
+.goal-button {
+  width: 100%;
+  margin: 5px 0; /* Added margin for spacing */
+  padding: 15px 20px; /* Increased padding for better click area */
+  border: 2px solid #ddd; /* Slightly thicker border */
+  border-radius: 10px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  font-size: 1rem; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+/* Hover State for Goal Button */
+.goal-button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  border-color: #ccc; /* Darker border on hover */
+}
+
+/* Selected State for Goal Button */
+.goal-button.elected {
+  background-color: #4caf50; /* Green background when selected */
+  color: #fff; /* White text when selected */
+  border-color: #4caf50; /* Green border when selected */
+}
+
+/* Navigation Buttons Styles */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Added margin-top for spacing */
+}
+
+/* Individual Navigation Button Styles */
+.back-button,
+.next-button {
+  padding: 10px 20px; /* Padding for better click area */
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50; /* Green background */
+  color: #fff; /* White text */
+  font-size: 1rem; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover State for Navigation Buttons */
+.back-button:hover,
+.next-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Additional Styles for Selected Next Button */
+.next-button.next-elected {
+  background-color: #3e8e41; /* Darker green background when next is selected */
+}
+
+/* Additional Styles */
+.note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
